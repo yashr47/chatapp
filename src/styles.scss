@@ -89,6 +89,7 @@
 
     .main-chat {
       flex: 2;
+      max-width: 1000px;
 
       .main-chat-info {
         height: 75px;
@@ -144,10 +145,12 @@
           }
           .message-content {
             max-width: 80%;
+            overflow: hidden;
             p{
               background-color: white;
               padding: 10px;
               border-radius: 0px 10px 10px 10px;
+              overflow-wrap: break-word;
             }
           }
 
@@ -175,7 +178,7 @@
           border: none;
           outline: none;
           width: 100%;
-          padding: 0;
+          padding: 0 10px;
           font-size: 20px;
           color:#27275f;
 
